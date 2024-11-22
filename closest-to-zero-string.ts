@@ -1,1 +1,1 @@
-export const closestToZeroString = (xyz: string) => " ";
+export const closestToZeroString = (xz: string[]) => [];
