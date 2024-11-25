@@ -3,9 +3,10 @@ import { closestToZeroString } from "./closest-to-zero-string";
 
 describe ('closestToZeroString', () => {
     it('should return an empty string', () => {
-        expect(closestToZeroString([])).toEqual([]);
+        expect(closestToZeroString([])).toEqual("");
     });
-    it('should return the string if the array has one string', () => {
-        expect(closestToZeroString([0])).toEqual([0]);
+    it('should return the one string in the array', () => {
+        expect(closestToZeroString(['Zero'])).toBe('Zero');
+        expect(closestToZeroString(['One'])).toBe('One');
     });
 });
