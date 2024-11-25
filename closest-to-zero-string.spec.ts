@@ -9,4 +9,7 @@ describe ('closestToZeroString', () => {
         expect(closestToZeroString(['Zero'])).toBe('Zero');
         expect(closestToZeroString(['One'])).toBe('One');
     });
+    it('should return the string that contains the same letters as "zero" ', () => {
+        expect(closestToZeroString(['Zero', 'One', 'Ten'])).toBe('Zero');
+    });
 });
